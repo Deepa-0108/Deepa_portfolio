@@ -1,0 +1,34 @@
+<form [formGroup]="Login">
+  <div class="form" *ngIf= "signupdata" >
+    <h4>{{signupdata.signup.title2 | translate}}</h4>
+    <br />
+    <div>
+      <label>{{ signupdata.signup.usename | translate  }} <span>*</span></label>
+    </div>
+    <div>
+      <input
+        type="text"
+        formControlName="username"
+        placeholder="{{signupdata.signup.placeholder | translate}}"
+      />
+    </div>
+    <div>
+      <label>{{signupdata.signup.password | translate }}<span>*</span></label>
+    </div>
+    <div>
+      <input
+        type="password"
+        formControlName="password"
+        placeholder="{{signupdata.signup.phpasswrd | translate}}"
+      />
+    </div>
+    <br />
+    <div>
+      <button (click)="onSubmit()">Login</button>
+    </div>
+    <div *ngIf= "login">
+      <p>*Please enter valid username and password!!</p>
+    </div>
+  </div>
+</form>
+

@@ -1,0 +1,21 @@
+<div class="header" *ngIf="lable">
+  <div class="logo">
+    <div class="logoImg">
+      <button (click)="toBack()" class="logobtn">
+        <img src="{{ lable.homepage.logo }}" alt="" height="100" />
+      </button>
+    </div>
+    <div class="logoName">
+      <h3>{{ lable.homepage.title }}</h3>
+    </div>
+  </div>
+  <div>
+    <button translate class="signupLogin" (click)="toSignup()">
+      {{ lable.homepage.signUpButton }}
+    </button>
+    <button class="signupLogin" (click)="toLogin()">
+      {{ lable.homepage.loginButton | translate }}
+    </button>
+  </div>
+  
+</div>

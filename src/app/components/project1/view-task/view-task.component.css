@@ -1,0 +1,94 @@
+.taskcrudOperation {
+  text-align: center;
+  display: flex;
+  justify-content: end;
+}
+.taskcrudOperation a {
+  margin: 0px 10px;
+  color: white;
+  padding: 4px 10px;
+}
+.card {
+  background-color: #bdbeeb;
+  height: 180px;
+}
+.changeStatusTaskButton {
+  display: none;
+}
+.completed-task.card {
+  border-color: #52e69b;
+  margin: 0px 5px;
+  background-color: #c4ffe1;
+  text-decoration: line-through;
+}
+.card-title {
+  text-transform: capitalize;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.taskcrudOperation .btn-success {
+    background-color: #198754;
+  }
+  .taskcrudOperation .btn-danger {
+    background-color: #dc3545;
+  }
+  .taskcrudOperation .btn-success:hover {
+    color: #198754;
+    background-color: white;
+  }
+  .taskcrudOperation .btn-danger:hover {
+   color: #dc3545;
+   background-color: white;
+  }
+
+@media (max-width: 768px) {
+  .completed-task .card-body .card-title {
+    text-decoration: line-through;
+  }
+  .card-title {
+    text-align: left;
+  }
+  .card-date,
+  .card-description {
+    display: none;
+  }
+  .card-body {
+    padding: 5px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+  }
+  .taskcrudOperation {
+    margin-left: auto;
+  }
+  .taskcrudOperation a {
+    margin: 5px;
+    color: white;
+    padding: 4px 10px;
+  }
+  .card {
+    border: none;
+    height: 130px;
+    border-radius: 1px;
+    background-color: rgb(108, 159, 236);
+  }
+  .changeStatusTaskButton {
+    display: block;
+  }
+  .completed-task.card {
+    background-color: white;
+  }
+  .taskcrudOperation {
+    padding: 4px 10px;
+  }
+  .taskcrudOperation .btn-success {
+    background-color: #198754;
+  }
+  .taskcrudOperation .btn-danger {
+    background-color: #dc3545;
+  }
+
+}

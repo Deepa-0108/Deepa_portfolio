@@ -1,0 +1,23 @@
+[
+  {
+    "username": "XXX",
+    "name": "Deepa",
+    "email": "xxx@gmail.com",
+    "phno": "1234567890",
+    "password": "Abc@111"
+  },
+  {
+    "username": "YYY",
+    "name": "Kaviya",
+    "email": "xx@gmail.com",
+    "phno": "2345678901",
+    "password": "Abc@222"
+  },
+  {
+    "username": "ZZZ",
+    "name": "Shruthi",
+    "email": "x@gmail.com",
+    "phno": "3456789012",
+    "password": "Abc@333"
+  }
+]

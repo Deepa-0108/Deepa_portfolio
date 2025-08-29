@@ -1,0 +1,25 @@
+{
+  "signup": {
+    "title1":"Sign Up",
+    "title2": "Login",
+    "usename": "Username:",
+    "name": "Name:",
+    "email": "E-mail:",
+    "phno": "Phonenumber:",
+    "password": "Password:",
+    "confirmpassword": "Confirm password:",
+    "button": "Signup",
+    "button2": "Login",
+    "mandatory": "*",
+    "placeholder": "Enter your username...",
+    "phname": "Enter your name...",
+    "phemail": "Enter your e-mail...",
+    "phphno": "Enter your phonenumber...",
+    "phpasswrd": "Enter your password...",
+    "type1":"text",
+    "type2":"password",
+    "image":"https://cdn.shopify.com/s/files/1/1095/2326/articles/Ethnic_wear.png?v=1647096848",
+    "content": "Stay a while & shop!!",
+    "content1": "We offer creative both men and women’s outdoor clothing, online, that is both functional and beautiful.Our messaging will focus on the eliminating the compromises others make and stepping up to the distinctive style of Liquid Culture. And of course social media will also be an important marketing tool in bringing customers to our website."
+  }
+}

@@ -1,0 +1,48 @@
+<form [formGroup]="SignUp">
+  <div class="container" *ngIf= "signupdata"> 
+  <div class="form">
+    <h4 translate>{{signupdata.signup.title1 | translate }}</h4>
+    <div>
+      <label>{{ signupdata.signup.usename | translate  }} <span>*</span></label>
+    </div>
+    <div>
+      <input type="{{signupdata.signup.type1}}" formControlName="username" placeholder="{{signupdata.signup.placeholder | translate }}"/>
+    </div>
+    <div>
+      <label>{{signupdata.signup.name | translate }}<span>*</span></label>
+    </div>
+    <div>
+      <input type="{{signupdata.signup.type1}}" formControlName="name" placeholder="{{signupdata.signup.phname | translate }}"/>
+    </div>
+    <div>
+      <label>{{signupdata.signup.email | translate }}<span>*</span></label>
+    </div>
+    <div>
+      <input type="{{signupdata.signup.type1}}" formControlName="email" placeholder="{{signupdata.signup.phemail | translate }}" />
+    </div>
+    <div>
+      <label>{{signupdata.signup.phno | translate }}<span>*</span></label>
+    </div>
+    <div>
+      <input type="{{signupdata.signup.type1}}" formControlName="phno" placeholder="{{signupdata.signup.phphno | translate }}"/>
+    </div>
+    <div>
+      <label>{{signupdata.signup.password | translate }}<span>*</span></label>
+    </div>
+    <div>
+      <input type="{{signupdata.signup.type2}}" formControlName="password" placeholder="{{signupdata.signup.phpasswrd | translate }}"/>
+    </div>
+    <div>
+      <label>{{signupdata.signup.confirmpassword | translate }}<span>*</span></label>
+    </div>
+    <div>
+      <input type="{{signupdata.signup.type2}}" formControlName="confirmpassword" placeholder="{{signupdata.signup.phpasswrd | translate }}"/>
+    </div>
+    <br>
+    <div>
+      <button (click) = "toSignup()">{{signupdata.signup.button | translate }}</button>
+    </div>
+  </div>
+</div>
+</form>
+

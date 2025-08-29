@@ -1,0 +1,51 @@
+p {
+  font-family: Lato;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 2rem;
+  width: 100%;
+  min-height: fit-content;
+  background-color: rgb(231, 229, 226);
+}
+
+.logo {
+  display: flex;
+}
+
+.logoName {
+  margin: 1rem 2rem;
+}
+
+.signupLogin {
+  font-size: medium;
+  width: 4.5rem;
+  background-color: rgb(110, 155, 219);
+  color: black;
+  border: solid 0.1rem #808080;
+  border-radius: 0.75rem;
+  margin-right: 1rem;
+  
+}
+
+.signupLogin:hover {
+  color: white;
+}
+
+.logobtn{
+  border: none;
+}
+
+.logobtn:hover{
+  background-color: #d6d1d1;
+}
+
+@media only screen and (max-width: 450px) {
+  .logoName {
+    display: none;
+  }
+
+}

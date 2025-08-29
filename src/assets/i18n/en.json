@@ -1,0 +1,22 @@
+{
+  "signUpButton": "Signup",
+  "loginButton": "Login",
+  "welcomeContent": "Stay a while & shop!!",
+  "content": "We offer creative both men and women’s outdoor clothing, online, that is both functional and beautiful.Our messaging will focus on the eliminating the compromises others make and stepping up to the distinctive style of Liquid Culture. And of course social media will also be an important marketing tool in bringing customers to our website.",
+  "footer": "Copyright © 2023",
+  "title1":"Sign Up",
+  "usename": "Username:",
+  "name": "Name:",
+  "email": "E-mail:",
+  "phno": "Phonenumber:",
+  "password": "Password:",
+  "confirmpassword": "Confirm password:",
+  "button": "Signup",
+  "title2": "Login",
+  "button2": "Login",
+  "placeholder": "Enter your username...",
+  "phname": "Enter your name...",
+  "phemail": "Enter your e-mail...",
+  "phphno": "Enter your phonenumber...",
+  "phpasswrd": "Enter your password..."
+}

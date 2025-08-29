@@ -1,0 +1,33 @@
+.container{
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content{
+  text-align: center;
+}
+
+.add{
+  background-color: rgb(10, 188, 10);
+  padding: 0.3rem;
+}
+
+.add:hover{
+  background-color: green;
+}
+.cart{
+  float: right;
+  background-color: none;
+}
+
+.cart:hover{
+  background-color: black;
+}
+
+.img{
+  margin-top: 1rem;
+}
+
+.name{
+  color: rgb(135, 193, 47);
+}

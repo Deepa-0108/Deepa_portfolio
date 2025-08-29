@@ -1,0 +1,22 @@
+{
+  "Signup": "S'inscrire",
+  "Login": "Se connecter",
+  "welcomeContent": "Restez un moment et faites du shopping!!",
+  "content": "Nous proposons en ligne des vêtements d'extérieur créatifs pour hommes et femmes, à la fois fonctionnels et beaux. Notre message se concentrera sur l'élimination des compromis que font les autres et sur l'adoption du style distinctif de Liquid Culture. Et bien sûr, les médias sociaux seront également un outil marketing important pour attirer les clients vers notre site Web.",
+  "Copyright © 2023": "droits d'auteur © 2023",
+  "Sign Up":"S'inscrire",
+  "Username:":"Nom d'utilisateur:",
+  "Name:":"Nom:",
+  "email":"E-mail:",
+  "Phonenumber:":"Numéro de téléphone:",
+  "Password:":"Mot de passe:",
+  "Confirm password:":"Confirmez le mot de passe:",
+  "button": "S'inscrire",
+  "title2": "Se connecter",
+  "button2": "Se connecter",
+  "Enter your username...": "Entrez votre nom d'utilisateur...",
+  "Enter your name...": "Entrez votre nom...",
+  "Enter your e-mail...": "Entrer votre Email...",
+  "Enter your phonenumber...": "Entrez votre numéro de téléphone...",
+  "Enter your password...": "Tapez votre mot de passe..." 
+}

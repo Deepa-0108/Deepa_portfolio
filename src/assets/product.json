@@ -1,0 +1,26 @@
+[
+  {
+    "image":"https://m.media-amazon.com/images/I/61DvDJj-5yL._SY879_.jpg",
+    "name":"Salwar suit",
+    "price": "₹ 2999"
+  },
+  {
+    "image":"https://m.media-amazon.com/images/I/81IgN3kYy9L._SY879_.jpg",
+    "name":"Lehenga Choli",
+    "price": "₹ 1599"
+  },
+  {
+    "image":"https://m.media-amazon.com/images/I/61wP7CO8AhS._SY879_.jpg",
+    "name":"Formal suit",
+    "price": "₹ 3399"
+  },{
+    "image":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSETK-uAkfx7sR_0BKvuLLaegtmXGhyGPSt8PD5TpK1kLCtFBcLFDj6bLh7dquSIRW8vJmXukm_Av6mqodLHy3ENwkM2IgZwJS196hHx05r5TbnlvspDxdP",
+    "name":"Choli",
+    "price":"₹ 2499"
+  },
+  {
+    "image":"https://m.media-amazon.com/images/I/71IQeWLv3UL._SY879_.jpg",
+    "name":"Regular fit",
+    "price":"₹ 6599"
+  }
+]

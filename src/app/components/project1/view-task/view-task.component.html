@@ -1,0 +1,18 @@
+<div class="card" [ngClass]="{ 'completed-task': task.isDone }">
+  <div class="card-body">
+    <h6 class="card-title">Task Name: {{ task.taskTitle }}</h6>
+    <p class="card-title">Date: {{ task.date }}</p>
+    <div class="taskcrudOperation">
+      <a
+        class="btn-success"
+        (click)="changeToDone(task.index)"
+      >
+        <i class="fa fa-check" aria-hidden="true"></i>
+      </a>
+      <a href=""><a (click)="editTask(index)">Edit</a></a>
+      <a class="btn-danger btn-sm" (click)="deleteTask(index)">
+        <i class="fa fa-trash" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</div>

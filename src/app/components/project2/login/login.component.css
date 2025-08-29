@@ -1,0 +1,22 @@
+.form{
+  margin: 4rem;
+}
+
+button{
+  background-color: rgb(23, 183, 63);
+  padding: 0.4rem;
+  border: none;
+  width: 5rem;
+}
+
+button:hover{
+  background-color: rgb(35, 160, 7);
+}
+
+span{
+  color: red;
+}
+
+p{
+  color: red;
+}
