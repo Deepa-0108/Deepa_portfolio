@@ -25,7 +25,14 @@ export const routes: Routes = [
       { path: 'register', loadComponent: () => import('./components/project3/auth/register.component').then(m => m.RegisterComponent) },
       { path: 'notes', loadComponent: () => import('./components/project3/notes/notes-list.component').then(m => m.NotesListComponent), canActivate: [notesLoginAuthGuard] },
       { path: 'notes/edit', loadComponent: () => import('./components/project3/notes/note-edit.component').then(m => m.NoteEditComponent), canActivate: [notesLoginAuthGuard] },
-      { path: 'notes/edit/:id', loadComponent: () => import('./components/project3/notes/note-edit.component').then(m => m.NoteEditComponent), canActivate: [notesLoginAuthGuard] },
+      { 
+  path: 'notes/edit/:id',
+  loadComponent: () => import('./components/project3/notes/note-edit.component').then(m => m.NoteEditComponent),
+  canActivate: [notesLoginAuthGuard],
+  data: {
+    renderMode: 'server'
+  }
+},
       { path: '', redirectTo: 'login', pathMatch: 'full' },
     ]
   }
