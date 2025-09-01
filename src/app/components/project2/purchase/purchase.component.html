@@ -1,20 +1,30 @@
-<h3>Welcome <span class="name">{{LoginName}} !!</span></h3>
-<div class="cart" >
-  <button [disabled]= "add" [routerLink]="['/cart']" > <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCJ_mgCRY06HEHcQEcdRtVakN8I43i1kgPnchYbsEyzg&s" width="35rem" ></button>
-  </div>
+<h3 class="welcome-msg">
+  Welcome <span class="name">{{ LoginName }}!!</span>
+</h3>
+
+<!-- Cart Button -->
+<div class="cart">
+  <button [disabled]="add" [routerLink]="['/project2/cart']" class="cart-button">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCJ_mgCRY06HEHcQEcdRtVakN8I43i1kgPnchYbsEyzg&s" alt="Cart" />
+  </button>
+</div>
+
+<!-- Product Grid -->
 <div class="container">
-  <div *ngFor="let products of product">
+  <div class="product-card" *ngFor="let products of product">
     <div class="img">
-      <img src="{{products.image}}" alt="" height="200rem" width="200rem" >
+      <img [src]="products.image" alt="{{products.name}}" />
     </div>
     <div class="content">
-      <h4 >{{products.name}}</h4>
-      <h3 >{{products.price}}</h3>
-      <button (click)="addItem(products)" class="add"> Add </button>
+      <h4>{{ products.name }}</h4>
+      <h3>{{ products.price }}</h3>
+      <button (click)="addItem(products)" class="add">Add</button>
     </div>
   </div>
 </div>
-<div *ngIf= "isLoading">
-  <h3 class="loading">Please wait loading....</h3>
-<app-spinner></app-spinner>
+
+<!-- Loading State -->
+<div *ngIf="isLoading">
+  <h3 class="loading">Please wait, loading...</h3>
+  <app-spinner></app-spinner>
 </div>

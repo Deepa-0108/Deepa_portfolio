@@ -36,7 +36,7 @@ ngOnInit(){
 toSignup(){
   if(this.SignUp.valid &&  this.SignUp.value.password == this.SignUp.value.confirmpassword){
     this.userService.setLocalStorage(this.SignUp.value.username)
-    this.router.navigate(['/purchase'])
+    this.router.navigate(['/project2/purchase'])
     alert('Success! Now you can login and enjoy your shopping..')
 
   }

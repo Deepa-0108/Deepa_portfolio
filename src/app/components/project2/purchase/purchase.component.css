@@ -1,33 +1,139 @@
-.container{
-  margin-top: 3rem;
-  display: flex;
-  flex-wrap: wrap;
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.content{
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
+
+/* Welcome Message */
+.welcome-msg {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.name {
+  color: rgb(135, 193, 47);
+  font-weight: bold;
+}
+
+/* Cart Section */
+.cart {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+.cart-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-button img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.2s ease;
+}
+
+.cart-button:hover img {
+  transform: scale(1.1);
+}
+
+/* Container for products */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+/* Each Product Card */
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.img {
+  width: 100%;
   text-align: center;
+  padding: 1rem;
 }
 
-.add{
+.img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Product content */
+.content {
+  text-align: center;
+  padding: 1rem;
+}
+
+.content h4 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.content h3 {
+  font-size: 1rem;
+  color: #27ae60;
+  margin-bottom: 0.8rem;
+}
+
+/* Add Button */
+.add {
   background-color: rgb(10, 188, 10);
-  padding: 0.3rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.add:hover{
+.add:hover {
   background-color: green;
 }
-.cart{
-  float: right;
-  background-color: none;
+
+/* Loading message */
+.loading {
+  text-align: center;
+  color: #888;
+  margin-top: 2rem;
+  font-size: 1.2rem;
 }
 
-.cart:hover{
-  background-color: black;
-}
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .welcome-msg {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 
-.img{
-  margin-top: 1rem;
-}
+  .cart {
+    position: static;
+    text-align: right;
+    margin-bottom: 1rem;
+  }
 
-.name{
-  color: rgb(135, 193, 47);
+  .container {
+    grid-template-columns: 1fr;
+  }
 }

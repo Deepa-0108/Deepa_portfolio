@@ -2,7 +2,7 @@
   {
     "image":"https://m.media-amazon.com/images/I/61DvDJj-5yL._SY879_.jpg",
     "name":"Salwar suit",
-    "price": "₹ 2999"
+    "price": "₹ 999"
   },
   {
     "image":"https://m.media-amazon.com/images/I/81IgN3kYy9L._SY879_.jpg",
@@ -22,5 +22,55 @@
     "image":"https://m.media-amazon.com/images/I/71IQeWLv3UL._SY879_.jpg",
     "name":"Regular fit",
     "price":"₹ 6599"
+  },
+  {
+    "image":"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRcJMum1yG7u6ouauvD27MbcnlGhzWfT7sELXUcgebpWaZ1XmjEntiyoW3A6OZ6yPt4AnQyPlOk0bYE554IQ_fArOjzDPhMFIHSEib_aeN5ENGEYblY2aVM",
+    "name":"Regular fit",
+    "price":"₹ 650"
+  },
+  {
+    "image":"https://m.media-amazon.com/images/I/51eBROSaUAL._SY879_.jpg",
+    "name":"Regular fit",
+    "price":"₹ 999"
+  },
+  {
+    "image":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT95kZTuh4oevV5GepYplIrKKDzoYs0J0Idst-rkItcOPUrN3dq5ObTbnMcZMQagTtjpL5goDC2BnlACEPol7TNKkJ_usJpL_UkVHFJ_4W_kbn5ZIyTd-RNnw",
+    "name":"Regular fit",
+    "price":"₹ 599"
+  },
+  {
+    "image":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRDh70NufO8khYBO-YNp8SyJuYvPuVq9dTvuzbHRDB0I2qAr_ZYzAYHC7F0fVPk5naa57C4UlHh2DCcciB2_q4wi4clwaZeOjPITUQcqSKNgV4klpSA4VYe",
+    "name":"Regular fit",
+    "price":"₹ 6799"
+  },
+  {
+    "image":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTt_-TgAzhKdxj__FtoRfaZuOXr7NU6rHG2h2Zn27Zvw1nRX5f00oWwvjnGA8RF1a2kNLu68vtvo3b5RK_ruMs8i5w2yrZzVitxBlc8gGAMor-QghJot4-HS0u78EXBuZLfzzKYsW-BrQ&usqp=CAc",
+    "name":"Cotton midi",
+    "price":"₹ 799"
+  },
+  {
+    "image":"https://m.media-amazon.com/images/I/614wM3DLNEL._SY879_.jpg",
+    "name":"Romper",
+    "price":"₹ 459"
+  },
+  {
+    "image":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ2QsDZ4-vnT-F3zfskycb3dFRK4f3MVlAEWjkUfYAqB5_uqaALiFLC_PFQYZppqSoA8Zt9zV-1RLqP3g7rHNfM4uyw9qz8OK2VfVwY8aEZQ9JSHIVo4ljR",
+    "name":"Jumpsuit",
+    "price":"₹ 459"
+  },
+  {
+    "image":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTvF2inbqaTjrE7F87uhoYpQCCiIh1nq0gYxmTWgQ31KV-El_0XlAaogJ9m37FHb_edcCDWt5sMDAdJnat05DHvGlOPMn6V0mtJVS6P6RWFlyiUjl79-dqUKg",
+    "name":"Formal fit",
+    "price":"₹ 499"
+  },
+  {
+    "image":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTuA9cD1-BK_1FLlotN_Q2sD9FrgZ5OeNjfg2VgaqzIYG_9rcBUamS0vGky4lHmxZrcIH0sS4rALNFYEbGuPIQwhM5ip-GOYyGHKjWaosScP9ulpoyRAcDc",
+    "name":"Top",
+    "price":"₹ 400"
+  },
+  {
+    "image":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTPxOgkVhRYJO0T2lxvSNHrC4Tn9jP06Tt9cbunxiZv_IROigPzZrJd_0iKFpTj1DVsCU2hXkAeq9XIUS65E9PWqymkeuXtaB7mEs26ZCg37ViJTW-Fy9MEawr9_seI-Ugd--5kgKo&usqp=CAc",
+    "name":"Skirt",
+    "price":"₹ 446"
   }
 ]

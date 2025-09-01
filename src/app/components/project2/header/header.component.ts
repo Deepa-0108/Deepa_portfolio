@@ -13,7 +13,8 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  lable:Header | undefined
+  lable:Header | undefined;
+  selectedLanguage: string = 'en';
   constructor(private headerService: HeaderService, private router: Router, private translateService: TranslateService) { 
     translateService.setDefaultLang('en');
     translateService.use('en')
@@ -22,15 +23,20 @@ export class HeaderComponent implements OnInit {
   ngOnInit():void{
     this.headerService.getHeader().subscribe((header:Header) => (this.lable = header))
   }
+
+  useLanguage(lang: string): void {
+  this.translateService.use(lang);
+  this.selectedLanguage = lang;
+}
   toSignup(){
-    this.router.navigate(['/signup'])
+    this.router.navigate(['/project2/signup'])
   }
  toLogin(){
-   this.router.navigate(['/login'])
+   this.router.navigate(['/project2/login'])
  }
 
  toBack(){
-   this.router.navigate(['/home'])
+   this.router.navigate(['/project2/home'])
  }
 
 }

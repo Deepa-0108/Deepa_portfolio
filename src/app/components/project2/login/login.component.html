@@ -1,34 +1,33 @@
-<form [formGroup]="Login">
-  <div class="form" *ngIf= "signupdata" >
-    <h4>{{signupdata.signup.title2 | translate}}</h4>
-    <br />
-    <div>
-      <label>{{ signupdata.signup.usename | translate  }} <span>*</span></label>
-    </div>
-    <div>
+<div class="login-wrapper" *ngIf= "signupdata">
+  <form class="login-form" [formGroup]="Login">
+    <h2>{{ signupdata.signup.title2 | translate }}</h2>
+<label>
+    <div class="label-row">
+      {{ signupdata.signup.usename | translate }} <span>*</span>
+      </div>
       <input
         type="text"
         formControlName="username"
-        placeholder="{{signupdata.signup.placeholder | translate}}"
+        placeholder="{{ signupdata.signup.placeholder | translate }}"
       />
-    </div>
-    <div>
-      <label>{{signupdata.signup.password | translate }}<span>*</span></label>
-    </div>
-    <div>
+    
+</label>
+    <label>
+      <div class="label-row">
+      {{ signupdata.signup.password | translate }} <span>*</span>
+      </div>
       <input
         type="password"
         formControlName="password"
-        placeholder="{{signupdata.signup.phpasswrd | translate}}"
+        placeholder="{{ signupdata.signup.phpasswrd | translate }}"
       />
-    </div>
-    <br />
-    <div>
-      <button (click)="onSubmit()">Login</button>
-    </div>
-    <div *ngIf= "login">
-      <p>*Please enter valid username and password!!</p>
-    </div>
-  </div>
-</form>
+      
+    </label>
 
+    <button type="button" (click)="onSubmit()">Login</button>
+
+    <p *ngIf="login" class="error-msg">
+      *Please enter valid username and password!
+    </p>
+  </form>
+</div>

@@ -1,22 +1,88 @@
-.form{
-  margin: 4rem;
+/* Wrapper to center the form */
+.login-wrapper {
+  height: 78vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
 }
 
-button{
-  background-color: rgb(23, 183, 63);
-  padding: 0.4rem;
+/* Login form card */
+.login-form {
+  background-color: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Heading */
+.login-form h2 {
+  margin-bottom: 0.5rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Label + input group */
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #444;
+  font-size: 0.9rem;
+}
+.label-row {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: 0.2rem;
+}
+
+/* Required star */
+.label-row span {
+  color: red;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+/* Input field styling */
+.login-form input {
+  margin-top: 0.4rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border 0.3s ease;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #2980b9;
+  box-shadow: 0 0 0 3px rgba(41, 128, 185, 0.2);
+}
+
+/* Submit button */
+.login-form button {
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+  color: rgb(16, 16, 16);
+  font-size: 1rem;
   border: none;
-  width: 5rem;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-button:hover{
-  background-color: rgb(35, 160, 7);
+.login-form button:hover {
+  background-color: #1c5980;
 }
 
-span{
+/* Error message */
+.error-msg {
   color: red;
-}
-
-p{
-  color: red;
+  font-size: 0.9rem;
+  text-align: center;
 }

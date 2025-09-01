@@ -12,7 +12,7 @@ export const project2Routes: Routes = [
     path: '',
     component: Project2Component,
     children: [
-      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: '', redirectTo: '/project2/home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
       { path: 'signup', component: SignupComponent },
       { path: 'login', component: LoginComponent },

@@ -8,7 +8,6 @@ import { SpinnerComponent } from './spinner/spinner.component';
 @Component({
   selector: 'app-project2',
   standalone: true,
-  providers: [TranslateService],
   imports: [RouterModule, HeaderComponent, FooterComponent],
   templateUrl: './project2.component.html',
   styleUrls: ['./project2.component.css']
@@ -16,11 +15,10 @@ import { SpinnerComponent } from './spinner/spinner.component';
 export class Project2Component {
   name = 'Angular ' + VERSION.major;
   constructor(private translateService: TranslateService){
-    translateService.setDefaultLang('en');
     translateService.use('en')
   }
   
-  ngOninit(){
+  ngOnInit(){
     console.log("proj2");
     
   }

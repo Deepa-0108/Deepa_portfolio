@@ -11,4 +11,9 @@ export class CartService {
     return of(this.cartList)
   }
 
+  clearCart(): void {
+  this.cartList = [];
+}
+
+
 }

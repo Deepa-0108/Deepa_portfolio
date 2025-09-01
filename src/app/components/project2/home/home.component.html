@@ -1,7 +1,25 @@
-<div *ngIf = "lable">
-  
-  <div class="content">
-    <h5 >{{'welcomeContent' | translate}}</h5>
-    <h6>{{'content' | translate}}</h6>
+<div *ngIf="lable">
+
+  <!-- Custom Slideshow Banner -->
+  <div class="slideshow-container">
+
+    <div class="slide" *ngFor="let slide of slides; let i = index" [class.active]="i === currentIndex">
+      <img [src]="slide" alt="Offer Slide" />
+    </div>
+
+    <!-- Pagination dots -->
+    <div class="dots">
+      <span *ngFor="let _ of slides; let i = index"
+            [class.active]="i === currentIndex"
+            (click)="goToSlide(i)"></span>
+    </div>
+
   </div>
+
+  <!-- Welcome content -->
+  <div class="content">
+    <h5>{{ 'welcomeContent' | translate }}</h5>
+    <h6>{{ 'content' | translate }}</h6>
+  </div>
+
 </div>

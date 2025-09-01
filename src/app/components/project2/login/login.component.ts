@@ -51,7 +51,7 @@ export class LoginComponent implements OnInit {
           this.Login.valid
         ) {
           this.loginAuth.loggedIn();
-          this.router.navigate(['/purchase']);
+          this.router.navigate(['/project2/purchase']);
           alert('Login Success :)');
           this.userdetailsService.setLocalStorage(this.Login.value.username);
         } else {

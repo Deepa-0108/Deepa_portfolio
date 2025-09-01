@@ -10,12 +10,30 @@
     </div>
   </div>
   <div>
-    <button translate class="signupLogin" (click)="toSignup()">
+    <button translate class="signupLogin" (click)="toSignup()" style="margin-left: 25px;margin-top: 15px;">
       {{ lable.homepage.signUpButton }}
     </button>
     <button class="signupLogin" (click)="toLogin()">
       {{ lable.homepage.loginButton | translate }}
     </button>
+    <div class="lng-tabs">
+  <span 
+    (click)="useLanguage('en')" 
+    [ngClass]="{ 'active-lang': selectedLanguage === 'en' }"
+  >English</span>
+
+  <span 
+    (click)="useLanguage('fr')" 
+    [ngClass]="{ 'active-lang': selectedLanguage === 'fr' }"
+  >French</span>
+
+  <span 
+    (click)="useLanguage('ch')" 
+    [ngClass]="{ 'active-lang': selectedLanguage === 'ch' }"
+  >Chinese</span>
+</div>
+
+
   </div>
   
 </div>
