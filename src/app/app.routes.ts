@@ -31,27 +31,27 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./components/project3/auth/register.component').then(m => m.RegisterComponent)
       },
-      {
-        path: 'notes',
-        loadComponent: () =>
-          import('./components/project3/notes/notes-list.component').then(m => m.NotesListComponent),
-        canActivate: [notesLoginAuthGuard],
-        data: { renderMode: 'client' }
-      },
-      {
-        path: 'notes/edit',
-        loadComponent: () =>
-          import('./components/project3/notes/note-edit.component').then(m => m.NoteEditComponent),
-        canActivate: [notesLoginAuthGuard],
-        data: { renderMode: 'client' }
-      },
-      {
-        path: 'notes/edit/:id',
-        loadComponent: () =>
-          import('./components/project3/notes/note-edit.component').then(m => m.NoteEditComponent),
-        canActivate: [notesLoginAuthGuard],
-        data: { renderMode: 'client' }
-      },
+      // {
+      //   path: 'notes',
+      //   loadComponent: () =>
+      //     import('./components/project3/notes/notes-list.component').then(m => m.NotesListComponent),
+      //   canActivate: [notesLoginAuthGuard],
+      //   data: { renderMode: 'client' }
+      // },
+      // {
+      //   path: 'notes/edit',
+      //   loadComponent: () =>
+      //     import('./components/project3/notes/note-edit.component').then(m => m.NoteEditComponent),
+      //   canActivate: [notesLoginAuthGuard],
+      //   data: { renderMode: 'client' }
+      // },
+      // {
+      //   path: 'notes/edit/:id',
+      //   loadComponent: () =>
+      //     import('./components/project3/notes/note-edit.component').then(m => m.NoteEditComponent),
+      //   canActivate: [notesLoginAuthGuard],
+      //   data: { renderMode: 'client' }
+      // },
       { path: '', redirectTo: 'login', pathMatch: 'full' },
     ]
   }
