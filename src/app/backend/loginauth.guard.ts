@@ -20,7 +20,7 @@ export class LoginauthGuard {
   if (loginauth) {
     return true;
   } else {
-    this.router.navigate(['/login']);
+    this.router.navigate(['/project3/login']);
     return false;
   }
 }

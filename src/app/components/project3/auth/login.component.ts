@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import { AuthService } from '../../../backend/auth.service';
 import { CommonModule } from '@angular/common';
 import { UserdetailsService } from '../../../backend/userdetails.service';
+import { LoginauthService } from '../../../backend/loginauth.service';
 
 @Component({
   selector: 'app-login',
@@ -84,11 +85,16 @@ import { UserdetailsService } from '../../../backend/userdetails.service';
     }
   `]
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
   form!: FormGroup;
   loginError = '';
 
-  constructor(private fb: FormBuilder, private auth: AuthService, private router: Router, private userdetailsService: UserdetailsService) {}
+  constructor(
+    private fb: FormBuilder,
+    private router: Router,
+    private userdetailsService: UserdetailsService,
+    private loginAuthService: LoginauthService
+  ) {}
 
   ngOnInit() {
     this.form = this.fb.group({
@@ -97,17 +103,23 @@ export class LoginComponent {
     });
   }
 
- onLogin() {
+  onLogin() {
     const username = this.form.get('username')?.value;
     const password = this.form.get('password')?.value;
+console.log("us", username, password);
 
     this.userdetailsService.validateUser(username, password).subscribe(user => {
       if (user) {
         this.loginError = '';
+        console.log(user,"userr");
+        
+        this.loginAuthService.loggedIn();
         this.userdetailsService.setLocalStorage(user.name);
-        this.router.navigate(['/project3/notes']);  // <-- your notes route here
+
+        this.router.navigate(['/project3/notes']);
       } else {
         this.loginError = 'Invalid username or password';
+        this.loginAuthService.loginFail();
       }
     });
   }

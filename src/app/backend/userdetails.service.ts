@@ -19,7 +19,9 @@ export class UserdetailsService {
   validateUser(username: string, password: string): Observable<User | null> {
     return this.getUsers().pipe(
       map(users =>
+        
         users.find(user => user.username === username && user.password === password) || null
+        
       )
     );
   }
@@ -29,7 +31,7 @@ export class UserdetailsService {
   }
 
   getLocalStorage(key:string){
-     localStorage.getItem(key)
+     return localStorage.getItem(key)
   }
 
   removeLocal(){

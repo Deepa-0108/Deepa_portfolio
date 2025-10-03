@@ -2,19 +2,23 @@ import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class LoginauthService {
-  loginauth:boolean = false
+  loginauth: boolean;
 
-  loggedIn(){
+  constructor() {
+    this.loginauth = localStorage.getItem('auth') === 'true';
+  }
+
+  loggedIn() {
     this.loginauth = true;
+    localStorage.setItem('auth', 'true');
   }
 
-  loginFail(){
+  loginFail() {
     this.loginauth = false;
+    localStorage.removeItem('auth');   
   }
 
-  isAuthenticate():boolean{
-    return this.loginauth;
+  isAuthenticate(): boolean {
+    return this.loginauth || localStorage.getItem('auth') === 'true';
   }
-  constructor() { }
-
 }
